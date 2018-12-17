@@ -7,6 +7,9 @@
 #include <stdlib.h>
 #include <string.h>
 #include <windows.h>
+#include <psapi.h>
 #include "mouseEvent.h"
+#include "windowsEvent.h"
+#include "inputEvent.h"
 
 #endif
