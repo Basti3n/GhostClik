@@ -10,6 +10,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <Windows.h>
+//#include <gtk/gtk.h>
 
 #include "mouseEvent.h"
 #include "windowsEvent.h"

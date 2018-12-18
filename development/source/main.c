@@ -5,7 +5,7 @@
 int main(int argc, char ** argv){
     printf("Running\n");
     //getMousePosition();
-    listAllWindows();
+    //listAllWindows();
     //getInputEvent();
     return SUCCESS ;
 }
