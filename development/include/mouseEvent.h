@@ -3,5 +3,6 @@
 
 #include "header.h"
 int getMousePosition();
+int createCursor();
 
 #endif

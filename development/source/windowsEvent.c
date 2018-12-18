@@ -17,11 +17,15 @@ int listAllWindows(){
         && strstr( buff, "MSCTFIME UI" ) == NULL ){
             printf( "Process %lu : %s \n", GetWindowThreadProcessId( handle, NULL ), buff );
             i++;
-            if( GetWindowThreadProcessId( handle, NULL ) == (long unsigned int)74624){               
-                handle = FindWindowEx(handle, 0, "Edit", 0);
+            if( GetWindowThreadProcessId( handle, NULL ) == (long unsigned int)70264){               
+                //handle = FindWindowEx(handle, 0, "Edit", 0);
                 printf( "Process %lu : %s \n", GetWindowThreadProcessId( handle, NULL ), buff );
                 Sleep(100);
-                if(!PostMessage(handle, WM_KEYDOWN, VK_NUMPAD4, 1))
+                /*if(!PostMessage(handle, WM_KEYDOWN, VK_NUMPAD4, 1))
+                    printf("%lu\n",GetLastError());*/
+                if(!PostMessage(handle, WM_LBUTTONDOWN, 1, MAKELPARAM(261,320)))
+                    printf("%lu\n",GetLastError()); 
+                if(!PostMessage(handle, WM_LBUTTONUP, 1, MAKELPARAM(1577,340)))
                     printf("%lu\n",GetLastError());
                 //Sleep(100);
                 printf("Je passe\n");
